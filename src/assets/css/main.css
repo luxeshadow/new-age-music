@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar personnalisée pour tout le site */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3B82F6 #F5F5F5;
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3B82F6, #1E40AF);
+  border-radius: 10px;
+  border: 2px solid #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563EB, #1E3A8A);
+}
+
+::-webkit-scrollbar-corner {
+  background: #F5F5F5;
+}
