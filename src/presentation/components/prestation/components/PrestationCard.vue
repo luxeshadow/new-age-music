@@ -14,7 +14,6 @@
       isHovered ? 'bg-gradient-to-t from-black via-black/80 to-transparent' : 'bg-gradient-to-t from-black/90 via-black/70 to-black/40'
     ]"></div>
 
-    <!-- Icone -->
     <!-- Icône -->
     <div class="absolute top-6 right-6 w-14 h-14 rounded-full backdrop-blur-sm bg-white/20
          flex items-center justify-center text-2xl text-white

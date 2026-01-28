@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import HomePage from './presentation/views/home/home_page.vue'
+// import HomePage from './presentation/views/home/home_page.vue'
+import MaintenancePage from './presentation/components/layouts/MaintenancePage.vue'
 </script>
 
 <template>
-    <HomePage />
+    <!-- <HomePage /> -->
+    <MaintenancePage />
 </template>
 

@@ -1,11 +1,25 @@
 <template>
-  <section class="relative min-h-screen py-20 bg-gray-50 overflow-hidden">
+  <section class="relative min-h-screen py-10 bg-gray-50 overflow-hidden">
 
     <!-- SplashCursor en fond -->
-    <SplashCursor class="absolute inset-0 z-0" :SIM_RESOLUTION="128" :DYE_RESOLUTION="1440" :CAPTURE_RESOLUTION="512"
-      :DENSITY_DISSIPATION="3.5" :VELOCITY_DISSIPATION="2" :PRESSURE="0.1" :PRESSURE_ITERATIONS="20" :CURL="3"
-      :SPLAT_RADIUS="0.2" :SPLAT_FORCE="6000" :SHADING="true" :COLOR_UPDATE_SPEED="10"
-      :BACK_COLOR="{ r: 30 / 255, g: 58 / 255, b: 138 / 255 }" :TRANSPARENT="true" />
+    <SplashCursor
+  class="fixed inset-0 z-0 pointer-events-none"
+  :SIM_RESOLUTION="128"
+  :DYE_RESOLUTION="1440"
+  :CAPTURE_RESOLUTION="512"
+  :DENSITY_DISSIPATION="3.5"
+  :VELOCITY_DISSIPATION="2"
+  :PRESSURE="0.1"
+  :PRESSURE_ITERATIONS="20"
+  :CURL="3"
+  :SPLAT_RADIUS="0.2"
+  :SPLAT_FORCE="6000"
+  :SHADING="true"
+  :COLOR_UPDATE_SPEED="10"
+  :BACK_COLOR="{ r: 30/255, g: 58/255, b: 138/255 }"
+  :TRANSPARENT="true"
+/>
+
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 z-10">
       <!-- En-tête avec animation -->
@@ -13,18 +27,17 @@
         <div class="inline-block mb-4">
           <div class="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
         </div>
-        <h2 class="text-6xl md:text-5xl font-bold mb-6 tracking-tight"
+        <h2 class="text-6xl md:text-5xl font-bold mb-3 tracking-tight"
           :style="{ fontFamily: Fonts.heading, color: Colors.primary }">
           <SplitText :text="'Nos Prestations'" :delay="100" />
         </h2>
-        <p class="text-gray-600 text-lg max-w-2xl mx-auto" :style="{ fontFamily: Fonts.body }">
+        <p class="text-gray-600 text-lg max-w-2xl mb-3 mx-auto" :style="{ fontFamily: Fonts.body }">
           Des solutions complètes pour vos projets créatifs et administratifs
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        <!-- Carte MUSIQUE -->
         <PrestationCard title="MUSIQUE" image="https://i.postimg.cc/pTMtGRNX/6363baf3bf870a217c7597e97916a62f.jpg" :items="musicPrestations"
           color="from-blue-500 to-indigo-600" icon="fi fi-rr-music-alt" />
 
