@@ -62,7 +62,7 @@ const artistes: Artiste[] = [
     " :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'">
     <!-- TITRE -->
     <div class="flex justify-center">
-      <SplitText text="Nos Artistes" class-name="text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
+      <SplitText text="Nos Artistes" class-name="text-6xl sm:text-5xl md:text-5xl font-bold mb-4"
         :style="{ fontFamily: Fonts.heading, color: Colors.primary }" :delay="100" :duration="0.6" ease="power3.out"
         split-type="chars" :from="{ opacity: 0, y: 40 }" :to="{ opacity: 1, y: 0 }" :threshold="0.1"
         root-margin="-100px" text-align="center" @animation-complete="handleAnimationComplete" />

@@ -18,7 +18,7 @@
         <!-- Animated Title -->
         <SplitText 
           text="Les Artisans de Votre Succès"
-          class-name="text-4xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tight"
+          class-name="text-4xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tight"
           :style="{ fontFamily: Fonts.heading, color: Colors.primary }"
           :delay="50"
           :duration="0.8"
